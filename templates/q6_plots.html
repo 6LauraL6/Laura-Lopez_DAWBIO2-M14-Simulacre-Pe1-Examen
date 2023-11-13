@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+     <div class="row">
+      <h5>⚠️Plot q6.⚠️</h5>
+
+      <h4 class="mt-2">Plot Demo </h4>
+        <p>Gràfic de prova del Titanic.</p>
+        <div>
+          <!-- <img class="img-fluid rounded rounded-5" src="images/plot1-sample.png"> -->
+          <img class="img-fluid" src="data:image/png;base64, {{grafic1|safe}}" alt="Gràfic de prova del Titanic" id="grafic1">
+        </div>
+{% endblock %}
